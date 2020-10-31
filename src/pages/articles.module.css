@@ -1,0 +1,14 @@
+.articles {
+  list-style-type: none;
+  padding-left: 0;
+  height: 100%;
+}
+
+.articles li + li {
+  border-top: 1px solid #DDD;
+}
+
+.articles li {
+  max-width: 800px;
+  padding: 10px 0;
+}

@@ -17,4 +17,10 @@
 
 .navigationItem a {
   color: currentColor;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.navigationItem .active {
+  background-color: rgba(255, 171, 174, 0.5);
 }

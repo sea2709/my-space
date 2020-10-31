@@ -4,7 +4,7 @@ require('dotenv').config({
 
 const contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 }
 
 // if you want to use the preview API please define
@@ -25,9 +25,15 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Dang\'s Space',
+    description: 'Welcome to my SPACE',
+    config: {
+      ...contentfulConfig,
+      'managementAccessToken': process.env.CONTENTFUL_MANAGEMENT_ACCESS_TOKEN,
+      'nodeType': process.env.CONTENTFUL_NODE_TYPE
+    }
   },
-  pathPrefix: '/gatsby-contentful-starter',
+  pathPrefix: '/dang-space',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',

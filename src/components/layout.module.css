@@ -1,0 +1,31 @@
+.wrapper {
+  border: 20px solid #c5484d;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #DDD;
+  display: flex;
+  margin: 10px;
+  padding: 10px 0 0 0;
+  justify-content: space-between;
+}
+
+.email, .socialMedia {
+  background-color: rgba(255, 171, 174, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+}

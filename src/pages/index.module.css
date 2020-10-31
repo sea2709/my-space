@@ -1,0 +1,9 @@
+.introduction {
+  line-height: 1.25em;
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.name {
+  background-color: rgba(255, 171, 174, 0.5);
+}
