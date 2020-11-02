@@ -11,7 +11,7 @@ const ArticlesPage = (props) => {
         {
           props.data.allContentfulArticle.edges.map(({node: article}) => (
             <li>
-              <Article title={article.title} link={article.link} 
+              <Article title={article.title} link={article.link} curator={article.curator}
                 image={article.image.file.url} description={article.shortDescription.shortDescription}></Article>
             </li>
           ))
@@ -41,6 +41,7 @@ export const query = graphql`
             }
           }
           link
+          curator
         }
       }
     }

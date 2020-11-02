@@ -11,6 +11,7 @@
 .content {
   margin-left: 10px;
   flex: 1;
+  position: relative;
 }
 
 .description {
@@ -28,4 +29,17 @@
   color: #c5484d;
   line-height: 1.25em;
   margin-bottom: 10px;
+}
+
+.curator {
+  background-color: rgba(255, 171, 174, 0.5);
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: 520px) {
+  .article {
+    flex-direction: column;
+  }
 }

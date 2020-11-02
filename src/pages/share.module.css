@@ -1,6 +1,7 @@
 .row {
   display: flex;
   width: 600px;
+  max-width: 100%;
   justify-content: center;
 }
 
@@ -59,4 +60,10 @@
   font-size: .85em;
   color: #c5484d;
   height: 22px;
+}
+
+@media (max-width: 600px) {
+  .row {
+    width: auto;
+  }
 }

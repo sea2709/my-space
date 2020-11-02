@@ -11,6 +11,9 @@ const Article = (props) => {
         </div>
         <div className={styles.description}>{props.description}</div>
         <div className={styles.link}><a href={props.link} target="_link">Go to article</a></div>
+        {
+          props.curator ? (<div className={styles.curator}>From {props.curator}</div>) : ''
+        }
       </div>
     </div>
   );
