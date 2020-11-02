@@ -36,7 +36,12 @@ module.exports = {
   pathPrefix: '/dang-space',
   plugins: [
     'gatsby-transformer-remark',
-    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-transformer-sharp',
+      options: {
+        icon: 'src/favicon/favicon-32x32.png'
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     {
